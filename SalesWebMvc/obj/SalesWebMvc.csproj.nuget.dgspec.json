@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pedro\\OneDrive\\Documentos\\SalesWebMvc\\SalesWebMvc\\SalesWebMvc.csproj": {}
+    "C:\\Users\\pedro\\OneDrive\\Documentos\\SalesWebMVC\\SalesWebMVC\\SalesWebMVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pedro\\OneDrive\\Documentos\\SalesWebMvc\\SalesWebMvc\\SalesWebMvc.csproj": {
+    "C:\\Users\\pedro\\OneDrive\\Documentos\\SalesWebMVC\\SalesWebMVC\\SalesWebMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pedro\\OneDrive\\Documentos\\SalesWebMvc\\SalesWebMvc\\SalesWebMvc.csproj",
-        "projectName": "SalesWebMvc",
-        "projectPath": "C:\\Users\\pedro\\OneDrive\\Documentos\\SalesWebMvc\\SalesWebMvc\\SalesWebMvc.csproj",
+        "projectUniqueName": "C:\\Users\\pedro\\OneDrive\\Documentos\\SalesWebMVC\\SalesWebMVC\\SalesWebMVC.csproj",
+        "projectName": "SalesWebMVC",
+        "projectPath": "C:\\Users\\pedro\\OneDrive\\Documentos\\SalesWebMVC\\SalesWebMVC\\SalesWebMVC.csproj",
         "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pedro\\OneDrive\\Documentos\\SalesWebMvc\\SalesWebMvc\\obj\\",
+        "outputPath": "C:\\Users\\pedro\\OneDrive\\Documentos\\SalesWebMVC\\SalesWebMVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
