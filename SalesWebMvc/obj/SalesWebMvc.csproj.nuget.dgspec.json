@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pedro\\OneDrive\\Documentos\\SalesWebMVC\\SalesWebMVC\\SalesWebMVC.csproj": {}
+    "C:\\Users\\pedro\\OneDrive\\Documentos\\SalesWebMvc\\SalesWebMVC\\SalesWebMVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pedro\\OneDrive\\Documentos\\SalesWebMVC\\SalesWebMVC\\SalesWebMVC.csproj": {
+    "C:\\Users\\pedro\\OneDrive\\Documentos\\SalesWebMvc\\SalesWebMVC\\SalesWebMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pedro\\OneDrive\\Documentos\\SalesWebMVC\\SalesWebMVC\\SalesWebMVC.csproj",
+        "projectUniqueName": "C:\\Users\\pedro\\OneDrive\\Documentos\\SalesWebMvc\\SalesWebMVC\\SalesWebMVC.csproj",
         "projectName": "SalesWebMVC",
-        "projectPath": "C:\\Users\\pedro\\OneDrive\\Documentos\\SalesWebMVC\\SalesWebMVC\\SalesWebMVC.csproj",
+        "projectPath": "C:\\Users\\pedro\\OneDrive\\Documentos\\SalesWebMvc\\SalesWebMVC\\SalesWebMVC.csproj",
         "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pedro\\OneDrive\\Documentos\\SalesWebMVC\\SalesWebMVC\\obj\\",
+        "outputPath": "C:\\Users\\pedro\\OneDrive\\Documentos\\SalesWebMvc\\SalesWebMVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -37,6 +37,16 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[3.1.12, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

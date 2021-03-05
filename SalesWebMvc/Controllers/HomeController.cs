@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using SalesWebMVC.Models;
+using SalesWebMVC.Models.ViewModels;
+
 
 namespace SalesWebMVC.Controllers
 {
@@ -20,9 +22,16 @@ namespace SalesWebMVC.Controllers
 
         public IActionResult Index()
         {
+            ViewData["Risos"] = "RSRSRSRS";
             return View();
         }
 
+        public IActionResult About()
+        {
+            ViewData["Message"] = "SalesWEB MVC Application40";
+            ViewData["Email"] = "pedrosophbc@gmail.coms";
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();

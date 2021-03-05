@@ -1,9 +1,9 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - SalesWebMVC</title>
+    <title>@ViewData["Title"]</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
@@ -24,6 +24,9 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Departamentos" asp-action="Index">Departamentos</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -33,7 +36,6 @@
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
-        <h3>@ViewData["Nome"] KKKKK </h3>
     </div>
 
     <footer class="border-top footer text-muted">
