@@ -74,6 +74,7 @@ namespace SalesWebMVC.Controllers
             }
 
             var departamento = await _context.Departamento.FindAsync(id);
+
             if (departamento == null)
             {
                 return NotFound();
@@ -86,7 +87,7 @@ namespace SalesWebMVC.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,NomeDepartamento")] Departamento departamento)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome")] Departamento departamento)
         {
             if (id != departamento.Id)
             {
