@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using SalesWebMVC.Data;
 using SalesWebMVC.Models;
+using System.Text.Json;
+using Newtonsoft.Json;
 
 namespace SalesWebMVC.Controllers
 {
@@ -149,6 +151,22 @@ namespace SalesWebMVC.Controllers
         private bool DepartamentoExists(int id)
         {
             return _context.Departamento.Any(e => e.Id == id);
+        }
+
+
+
+        [HttpGet]
+        public object ApiMethod()
+        {
+            List<Departamento> departamentos = new List<Departamento>();
+
+            departamentos.Add(new Departamento() { Id = 1, Nome = "Novo" });
+            departamentos.Add(new Departamento() { Id = 2, Nome = "Velho" });
+
+            var objRetorno = JsonConvert.SerializeObject(departamentos);
+
+            return departamentos;
+
         }
     }
 }

@@ -1,15 +1,17 @@
 ﻿@model IEnumerable<SalesWebMVC.Models.Departamento>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Departamentos";
 }
 
-<h1>Index</h1>
+<h1 class="text-info">Lista de Departamentos</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+
+    <a class="btn btn-sm btn-info" asp-action="Create">Criar novo</a>
+
 </p>
-<table class="table">
+<table class="table table-sm table-striped table-hover" >
     <thead>
         <tr>
             <th>
@@ -19,17 +21,18 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nome)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                <td>
+                    <a class="btn btn-sm btn-light" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                    <a class="btn btn-sm btn-info" asp-action="Details" asp-route-id="@item.Id">Details</a>
+                    <a class="btn btn-sm btn-danger" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
