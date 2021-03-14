@@ -7,8 +7,8 @@ namespace SalesWebMVC.Models.Enum
 {
     public enum StatusVenda
     {
-        Aguaradando_Pagamento,
-        Aprovada,
-        Cancelada
+        Pendente = 0,
+        Aprovada = 1,
+        Cancelada = 2
     }
 }
