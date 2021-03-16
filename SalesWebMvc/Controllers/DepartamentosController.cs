@@ -56,7 +56,7 @@ namespace SalesWebMVC.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,NomeDepartamento")] Departamento departamento)
+        public async Task<IActionResult> Create([Bind("Id,Nome")] Departamento departamento)
         {
             if (ModelState.IsValid)
             {
@@ -160,8 +160,8 @@ namespace SalesWebMVC.Controllers
         {
             List<Departamento> departamentos = new List<Departamento>();
 
-            departamentos.Add(new Departamento() { Id = 1, Nome = "Novo" });
-            departamentos.Add(new Departamento() { Id = 2, Nome = "Velho" });
+            departamentos.Add(new Departamento() { Id = 1, NomeDepartamento = "Novo" });
+            departamentos.Add(new Departamento() { Id = 2, NomeDepartamento = "Velho" });
 
             var objRetorno = JsonConvert.SerializeObject(departamentos);
 
