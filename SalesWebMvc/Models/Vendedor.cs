@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations.Schema;
+using SalesWebMVC.Data;
+
+
 namespace SalesWebMVC.Models
 {
     public class Vendedor
@@ -17,7 +20,7 @@ namespace SalesWebMVC.Models
 
         public Vendedor()
         {
-
+            
         }
 
         public Vendedor(int id, string nome, string email, double salarioBase, DateTime dataNascimento, Departamento departamento)
@@ -51,5 +54,7 @@ namespace SalesWebMVC.Models
 
             return total;
         }
+
+
     }
 }
