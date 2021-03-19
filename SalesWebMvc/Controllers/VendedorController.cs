@@ -10,7 +10,7 @@ namespace SalesWebMVC.Controllers
 {
     public class VendedorController : Controller
     {
-        public VendedorService _vendedorService { get; set; }
+        private VendedorService _vendedorService { get; set; }
         
         public VendedorController(VendedorService vendedorService)
         {
@@ -20,7 +20,7 @@ namespace SalesWebMVC.Controllers
         {
             var vendedores = _vendedorService.Listar();
 
-            return View();
+            return View(vendedores);
         }
 
 

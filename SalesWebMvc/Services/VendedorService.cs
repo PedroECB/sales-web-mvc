@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using SalesWebMVC.Models;
 using SalesWebMVC.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace SalesWebMVC.Services
 {
@@ -19,7 +20,7 @@ namespace SalesWebMVC.Services
 
         public List<Vendedor> Listar()
         {
-            return _context.Vendedor.ToList();
+            return _context.Vendedor.Include("Departamento").ToList(); 
         }
     }
 }

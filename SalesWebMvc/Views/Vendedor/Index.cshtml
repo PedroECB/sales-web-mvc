@@ -1,7 +1,11 @@
-﻿@*
+﻿@model IEnumerable<SalesWebMVC.Models.Vendedor>;
+@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+
 *@
 @{
+
+
     ViewData["Title"] = "Vendedores";
 }
 
@@ -9,3 +13,35 @@
 
 
 <h3>Lista de vendedores</h3>
+
+<table class="table table-sm table-striped">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Nome)</th>
+            <th>E-mail</th>
+            <th>Departamento</th>
+            <th>Nascimento</th>
+            <th>Salário</th>
+
+
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var vendedor in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => vendedor.Nome)</td>
+                <td>@Html.DisplayFor(modelItem => vendedor.Email)</td>
+                <td> @vendedor.Departamento.NomeDepartamento </td>
+                <td> @Html.DisplayFor(modelItem => vendedor.DataNascimento)</td>
+                <td>@Html.DisplayFor(modelItem => vendedor.SalarioBase)</td>
+                <td>
+                    <a asp-controller="Vendedor" asp-action="Visualizar" asp-route-id="@vendedor.Id"  class="btn btn-default btn-sm">Visualizar</a>
+                    <a asp-controller="Vendedor" asp-action="Edit" asp-route-id="@vendedor.Id" class="btn btn-primary btn-sm">Editar</a>
+                    <a asp-controller="Vendedor" asp-action="Remover" asp-route-id="@vendedor.Id" class="btn btn-danger btn-sm">Remover</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
